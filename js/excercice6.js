@@ -1,6 +1,6 @@
 // Crea un bucle que imprima los numeros del 1 al 20
 
-for (let i = 1; i <= 20; i++){
+/*for (let i = 1; i <= 20; i++){
     console.log(i)
 }
 
@@ -59,5 +59,49 @@ let multi = 5
 
 for (let i = 1; i <= 10; i++){
     console.log(`${multi} X ${i} = ${multi * i}`)
+}*/
+
+// While
+
+// Imprime los numeros del 10 al 1 en orden inverso
+
+let valor = 10
+
+while (valor >= 1){
+    console.log(valor)
+    valor--
 }
 
+// Genera un numero aleatorio entre 1 y 10 y sigue generando hasta que salga 5
+let numAleatorio
+let intentos = 0
+while (numAleatorio !== 5){
+    numAleatorio = Math.floor(Math.random() * 10) +1
+    intentos++
+    console.log(`Numero generado ${numAleatorio}`)
+}
+console.log(`Encontrado despues de ${intentos} intentos`)
+
+// Cuenta cuantas veces aparece un caracter especifico en una cadena dada
+
+let cadena = "ndkugnmdkjudgnchghgg"
+let caracter = "g"
+let contador = 0
+let i = 0
+
+while (i < cadena.length){
+    if (cadena[i] === caracter){
+        contador++
+    }
+    i++
+}
+console.log(`El caracter "${caracter}" aparece ${contador} veces dentro de la cadena`)
+
+// Pide al usuario un numero mayor a 10, si ingresa uno menor o igual, vuelve a pedirlo hasta que lo haga correctamente
+
+let number = 12
+
+do{
+    
+} 
+while (number <= 10 )
