@@ -105,7 +105,7 @@ class Dog extends Animal {
         console.log("el perro corre")
     }
     sonido(){                       // redefinir la funcion del perro para que no siga heredando la general sino que tenga su funcion
-        console.log("El perro ladra")// propia, se debe redefinir con el mis nombre
+        console.log("El perro ladra")// propia, se debe redefinir con el mismo nombre
     }
 }
 
