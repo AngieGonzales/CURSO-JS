@@ -1,0 +1,30 @@
+// PROMESA: Resultado de una operacion asincrona, se suelen usar en tareas que requieren tiempo de procesamiento
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async - Await</title>
+</head>
+<body>
+    <div id="contenido"></div>
+    <script>
+        
+        async function getPerson() {
+            try {
+            const response = await fetch("https://randomuser.me/api");
+            const data = await response.json();
+            console.log(data);
+            document.getElementById("contenido").innerHTML = `
+            <img src = "${data.results[0].picture.large}" width = "200px"/>
+            <p> Nombre:${data.results[0].name.first} ${data.results[0].name.last}`;
+            }
+            catch (error){
+                console.log("Error: " + error)
+            }
+        }
+        getPerson()
+        
+    </script>
+</body>
+</html>
