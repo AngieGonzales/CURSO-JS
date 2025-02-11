@@ -1,4 +1,4 @@
-/*console.log("Inicio")
+console.log("Inicio")
 for (let i = 0; i <= 1000000000; i ++){}  //Codigo bloqueante, el codigo se detiene hasta que la tarea finalice
 console.log("fin")
 
@@ -103,7 +103,7 @@ iniciarSesion("admin", 12321)
         });
     }
     
-    cuentaRegresiva(5).then((mensaje) => console.log(mensaje));  // Consumir la promesa*/
+    cuentaRegresiva(5).then((mensaje) => console.log(mensaje));  // Consumir la promesa
     
 //Crea una función que obtenga datos de una API y maneje errores si la respuesta no es exitosa.
 
